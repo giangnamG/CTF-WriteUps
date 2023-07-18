@@ -1,0 +1,56 @@
+{
+	"folders": [
+		{
+			"name": "zombie-101-source",
+			"path": "zombie-101-source"
+		},
+		{
+			"name": "keyexchange",
+			"path": "keyexchange"
+		},
+		{
+			"name": "Z2kDH",
+			"path": "Z2kDH"
+		},
+		{
+			"name": "Viblo",
+			"path": "Viblo"
+		},
+		{
+			"name": "HackTheBox",
+			"path": "HackTheBox"
+		},
+		{
+			"name": "CryptoHack",
+			"path": "CryptoHack"
+		},
+		{
+			"name": "LabCTF",
+			"path": "../xampp/htdocs/LabCTF"
+		},
+		{
+			"name": "Lab_ISPCTF",
+			"path": "../ISP/Lab_ISPCTF"
+		},
+		{
+			"name": "Spaceheroes",
+			"path": "Spaceheroes"
+		},
+		{
+			"name": "pwnme",
+			"path": "pwnme"
+		},
+		{
+			"name": "m0lecon",
+			"path": "m0lecon"
+		},
+		{
+			"name": "pwnable.tw",
+			"path": "pwnable.tw"
+		},
+		{
+			"name": "Pico",
+			"path": "Pico"
+		}
+	]
+}
