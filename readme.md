@@ -9,18 +9,22 @@
     <tr>
         <td>CookieArena</td>
         <td><a href="./CookieArenaCTFWriteUps/readme.md">WriteUps</a></td>
+        <td></td>
     </tr>
     <tr>
         <td>PortSwigger</td>
         <td><a href="./PortSwigger/readme.md">WriteUps</a></td>
+        <td></td>
     </tr>
     <tr>
         <td>VibloCTF</td>
         <td><a href="./VibloCTFWriteUps/readme.md">WriteUps</a></td>
+        <td></td>
     </tr>    
     <tr>
         <td>CTFLearn</td>
         <td><a href="./CTFLEARN/readme.md">WriteUps</a></td>
+        <td></td>
     </tr>
     <tr>
         <td>BDSec CTF</td>
