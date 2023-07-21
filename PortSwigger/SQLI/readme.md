@@ -270,6 +270,8 @@ PostgreSQL:
     SELECT version()
 Mysql:
     SELECT @@version
+SQlite:
+    SELECT sqlite_version();
 ```
 <h4>Tables, columns</h4>
 
@@ -283,7 +285,15 @@ Mysql:
     SELECT column_name FROM information_schema.columns;
     SELECT table_name FROM information_schema.tables;
     SELECT column_name from information_schema.columns WHERE TABLE_NAME='name of table';
-
+Sqlite:
+    -- Liệt kê các bảng 
+    select tbl_name as table_name from sqlite_schema;
+    select name from sqlite_master where type='table';
+    -- Liệt kê tất cả các cột (bao gồm các thuộc tính)
+    pragma table_info('TableName');
+    select * from pragma_table_info('TableName');
+    -- liệt kê ra các cột (chỉ liệt kê ra tên cột, không bao gồm thuộc tính)
+    SELECT name FROM pragma_table_info('TableName');
 ```
 
 <h1>UNION</h1>
