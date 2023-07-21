@@ -4,6 +4,7 @@
     <tr>
         <td>Origin</td>
         <td>WriteUps</td>
+        <td>Time</td>
     </tr>
     <tr>
         <td>CookieArena</td>
@@ -24,5 +25,6 @@
     <tr>
         <td>BDSec CTF</td>
         <td><a href="./bdsecCTFWriteUps/readme.md">WriteUps</a></td>
+        <td>22.07.2023</td>
     </tr>
 </table>
