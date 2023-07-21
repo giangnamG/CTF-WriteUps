@@ -21,4 +21,8 @@
         <td>CTFLearn</td>
         <td><a href="./CTFLEARN/readme.md">WriteUps</a></td>
     </tr>
+    <tr>
+        <td>BDSec CTF</td>
+        <td><a href="./bdsecCTFWriteUps/readme.md">WriteUps</a></td>
+    </tr>
 </table>
