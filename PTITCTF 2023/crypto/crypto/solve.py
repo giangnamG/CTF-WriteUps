@@ -1,0 +1,7 @@
+flag = ""
+a = "\x50\x54\x49\x54\x43T\x46{"
+flag += a
+c = "\x10\x27\x3a\x17\x2d\x10\x2b\x21\x3c\x79\x26\x2f"
+c = "".join([chr(ord(_)^72) for _ in c])
+flag += c+"}"
+print(flag)

@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    container_name: rsa_time
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    ports:
+      - 7790:7778
+    volumes:
+      - ./:/app/
