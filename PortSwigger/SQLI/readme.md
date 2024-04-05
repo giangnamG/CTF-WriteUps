@@ -137,9 +137,12 @@ Sắp xếp theo thứ tự từ 1->20 ta được password:
 
 ## Lab 12: Blind SQL injection with conditional errors
 
+DB: oracle
+
 Lỗ hổng nằm ở <b>TrackingId</b>
 
 ![](image-23.png)
+![](image-27.png)
 
 Nếu sai cú pháp, server trả về 500, ngược lại đúng trả về 200
 
@@ -147,4 +150,79 @@ Sử dụng kỹ thuật <b>conditional errors</b>
 
 ![](image-26.png)
 
+Tìm độ dài password
+
+Trả về 500 => tìm được độ dài
+
+![](image-28.png)
+
+=> Độ dài 20 ký tự
+
+![](image-29.png)
+
+Tìm mật khẩu
+
+![](image-31.png)
+
+Tham số thứ nhất là vị trí ký tự trong password
+
+Tham số thứ hai là giá trị cần so sánh với giá trị của tham số 1
+
+Nếu khớp server sẽ trả vể 500
+
+![](image-32.png)
+
+Sắp xếp theo thứ tự từ 1->20: ta được nhận password
+
+>09vb1aq3hq0b5w8ue8fc
+
+![](image-33.png)
+
+## Lab 13: Visible error-based SQL injection
+>SQLi dựa trên lỗi có thể nhìn thấy được
+
+Ứng dụng sử dụng cookie theo dõi để phân tích và thực hiện truy vấn SQL chứa giá trị của cookie đã gửi. 
+
+Kết quả của truy vấn SQL không được trả về. 
+
+Cơ sở dữ liệu chứa một bảng khác gọi là <b>users</b>, với các cột là tên <b>username</b> và <b>password</b>. Để giải quyết bài lab, hãy tìm cách rò rỉ mật khẩu cho người dùng quản trị viên, sau đó đăng nhập vào tài khoản của họ.
+
+Khi thêm 1 dấu nháy đơn ta thấy server báo lỗi
+
+![](image-46.png)
+
+Khi thêm 1 dấu nháy đơn nữa, ta thấy server không báo lỗi
+
+![](image-45.png)
+
+Do 2 dấu nháy đơn tạo thành chuỗi rỗng
+
+![](image-43.png)
+
+Sử dụng cast để db báo ra lỗi cú pháp convert
+
+![](image-47.png)
+
+## Lab 14: Blind SQL injection with time delays
+
+Ứng dụng sử dụng cookie theo dõi để phân tích và thực hiện truy vấn SQL chứa giá trị của cookie đã gửi. 
+
+Kết quả của truy vấn SQL không được trả về và ứng dụng không phản hồi theo bất kỳ cách nào khác nhau dựa trên việc truy vấn trả về bất kỳ hàng nào hay gây ra lỗi. 
+
+Tuy nhiên, do truy vấn được thực hiện đồng bộ nên có thể kích hoạt độ trễ thời gian có điều kiện để suy ra thông tin. Để giải quyết bài lab, hãy khai thác lỗ hổng SQL SQL để gây ra độ trễ 10 giây.
+
+![](image-48.png)
+
+## Lab 15: Blind SQL injection with time delays and information retrieval
+>Blind SQL với độ trễ thời gian và truy xuất thông tin
+
+detect bằng time sleep (postgrep)
+
+![](image-49.png)
+
+Sử dụng dấu ; để ngắt lệnh cũ viết lệnh mới
+
+![](image-50.png)
+
+Khi điều kiện đúng thì delay 20s, khi điều kiện sai thì ko delay
 
